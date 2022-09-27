@@ -17,10 +17,10 @@ public class Usuario {
     @Column (name="id_usuario", nullable = false,updatable = false)
     private Long idUsuario;
 
-    @Column (name = "nombre_usuario", nullable = false, length = 100)
+    @Column (name = "nombre_usuario", unique = true, nullable = false, length = 100)
     private String nombreUsuario;
 
-    @Column (name="correo", nullable = false, length = 100)
+    @Column (name="correo", nullable = false, unique=true, length = 100)
     private String correo;
 
     @Column (name="clave", nullable = false, length = 255)
