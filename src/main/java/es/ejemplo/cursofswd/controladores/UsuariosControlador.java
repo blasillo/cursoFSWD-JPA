@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UsuariosControlador {
-    @Autowired
+    //TODO
     private UsuariosServicio servicio;
 
     @GetMapping("/api/v1/usuarios/")
@@ -18,17 +18,17 @@ public class UsuariosControlador {
     }
     @GetMapping("/api/v1/usuarios/{id}")
     public ResponseEntity<?> verUsuarioPorId  (@PathVariable Long id) {
-        return ResponseEntity.ok (servicio.obtenerUsuarioPorId(id));
+        return // TODO
     }
 
     @GetMapping("/api/v1/estudiantes/")
     public ResponseEntity<?> verEstudiantes() {
-        return ResponseEntity.ok(servicio.obtenerEstudiantes());
+        return // TODO
     }
 
     @PostMapping("/api/v1/usuarios/registro")
     public ResponseEntity<?> registroUsuarios (@RequestBody Usuario usuario){
-        return new ResponseEntity<>( servicio.nuevoUsuario(usuario ), HttpStatus.CREATED);
+        return //TODO
     }
 
 
