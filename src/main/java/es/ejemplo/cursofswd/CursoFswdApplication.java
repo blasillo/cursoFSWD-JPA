@@ -56,13 +56,6 @@ public class CursoFswdApplication {
                     .build();
             repositorio.save(estudiante);
 
-
-            Optional<Usuario> resultado1 = repositorio.findByCorreoAndClave("profe@demo.com", "lacasadepapel");
-            if (resultado1.isPresent()) System.out.println(resultado1.toString());
-
-            //List<Usuario> estu = repositorio.findByRol_Estudiante();
-            //System.out.println(estu.stream().collect(Collectors.toList()));
-
         };
     }
 
