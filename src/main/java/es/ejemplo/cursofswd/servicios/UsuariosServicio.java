@@ -8,7 +8,6 @@ public interface UsuariosServicio {
 
         List<Usuario> obtenerEstudiantes();
 
-
         Usuario buscarPorCorreoClave (String correo, String clave);
         List<Usuario> obtenerTodosUsuarios ();
         Usuario obtenerUsuarioPorId(Long id);

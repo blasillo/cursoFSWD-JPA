@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
+import javax.transaction.Transactional;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.List;
@@ -46,6 +47,7 @@ public class UsuariosServicioImpl implements UsuariosServicio {
     }
 
     @Override
+    @Transactional
     public Usuario nuevoUsuario(Usuario usuario)  {
         usuario.setRol( Rol.ESTUDIANTE); // usuario nuevo por defecto es estudiante
         // la clave hay que guardarla no en claro
